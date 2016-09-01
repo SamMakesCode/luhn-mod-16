@@ -1,6 +1,9 @@
 {
   "name": "samlittler/luhn-mod-n",
+  "type": "library",
   "description": "A PHP library for calculating LuhnMod checksums",
+  "keywords": ["luhn", "mod", "checksum"],
+  "homepage": "https://github.com/samlittler/LuhnModN-php",
   "license": "proprietary",
   "authors": [
     {
