@@ -1,7 +1,6 @@
 {
   "name": "samlittler/luhn-mod-n",
   "description": "A PHP library for calculating LuhnMod checksums",
-  "minimum-stability": "dev",
   "license": "proprietary",
   "authors": [
     {
