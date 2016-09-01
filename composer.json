@@ -4,7 +4,6 @@
   "description": "A PHP library for calculating LuhnMod checksums",
   "keywords": ["luhn", "mod", "checksum"],
   "homepage": "https://github.com/samlittler/LuhnModN-php",
-  "minimum-stability": "stable",
   "license": "proprietary",
   "authors": [
     {
