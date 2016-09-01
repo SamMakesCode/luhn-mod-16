@@ -2,8 +2,18 @@
 
 namespace LuhnModN;
 
+/**
+ * Class LuhnModN
+ * @package LuhnModN
+ */
 class LuhnModN
 {
+    /**
+     * @param $data
+     * @param $n
+     * @return string
+     * @throws \Exception
+     */
     public static function calculate($data, $n)
     {
         if (!is_string($data)) {
