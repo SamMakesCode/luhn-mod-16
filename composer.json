@@ -1,0 +1,12 @@
+{
+  "name": "samlittler/LuhnModN-php",
+  "description": "A PHP library for calculating LuhnMod checksums",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Sam Littler",
+      "email": "sam@solumstone.co.uk"
+    }
+  ]
+}
