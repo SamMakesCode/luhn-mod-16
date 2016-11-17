@@ -1,7 +1,7 @@
 {
-  "name": "samlittler/luhn-mod-n",
+  "name": "samlittler/luhn-mod-16",
   "type": "library",
-  "description": "A PHP library for calculating LuhnMod checksums",
+  "description": "A PHP library for calculating Luhn Mod 16 checksums",
   "keywords": ["luhn", "mod", "checksum"],
   "homepage": "https://github.com/samlittler/LuhnModN-php",
   "license": "proprietary",
@@ -13,7 +13,11 @@
   ],
   "autoload": {
     "psr-4": {
-      "LuhnModN\\": "src/"
+      "LuhnMod16\\": "src/"
     }
+  },
+  "require": {
+    "phpunit/phpunit": "^5.6",
+    "squizlabs/php_codesniffer": "^2.7"
   }
 }
