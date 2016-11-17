@@ -3,7 +3,7 @@
   "type": "library",
   "description": "A PHP library for calculating Luhn Mod 16 checksums",
   "keywords": ["luhn", "mod", "checksum"],
-  "homepage": "https://github.com/samlittler/LuhnModN-php",
+  "homepage": "https://github.com/samlittler/luhn-mod-16",
   "license": "proprietary",
   "authors": [
     {
