@@ -9,8 +9,24 @@ class LuhnModNTest extends \PHPUnit\Framework\TestCase
      */
     public function testCalculatesCorrectly()
     {
-        $test_value = '0B012722900021AC35B2';
-        $checksum = \LuhnMod16\LuhnMod16::calculate($test_value);
-        $this->assertEquals($checksum, '1');
+        $data = [
+            ['check' => '5', 'string' => '0A0417347000000005B2'],
+            ['check' => '1', 'string' => '0A0417347000000005CB'],
+            ['check' => 'F', 'string' => '0A0417347000000005CC'],
+            ['check' => 'B', 'string' => '0A0417347000000005CD'],
+            ['check' => 'A', 'string' => '0A0417347000000005CE'],
+            ['check' => '9', 'string' => '0A0417347000000005CF'],
+            ['check' => '7', 'string' => '0A0417347000000005D0'],
+            ['check' => '5', 'string' => '0A0417347000000005D1'],
+            ['check' => '3', 'string' => '0A0417347000000005D2'],
+            ['check' => '1', 'string' => '0A0417347000000005D3'],
+            ['check' => 'F', 'string' => '0A0417347000000005D4'],
+            ['check' => '2', 'string' => '0A0417347000000005D5'],
+            ['check' => '1', 'string' => '0A0417347000000005D6'],
+        ];
+        
+        foreach($data as $row) {
+            $this->assertEquals($row['check'], \LuhnMod16\LuhnMod16::calculate($row['string']));
+        }
     }
 }
