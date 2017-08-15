@@ -9,6 +9,7 @@ namespace LuhnMod16;
 class LuhnMod16
 {
     /**
+     * Calculates a checksum for the data provided using the LuhnMod16 methodology
      * @param $data
      * @return string
      * @throws \Exception
@@ -38,7 +39,8 @@ class LuhnMod16
                 // Convert it to hexadecimal
                 $hexed = dechex($doubled);
 
-                // If it's still a number (not a hex 'letter'), note casting to string, as ctype_digit accepts ascii codes as well
+                // If it's still a number (not a hex 'letter')
+                // Note: casting to string, as ctype_digit accepts ascii codes as well
                 if (ctype_digit((string) $hexed)) {
                     $character_list[$i] = array_sum(str_split($hexed)); // Store it
                 }

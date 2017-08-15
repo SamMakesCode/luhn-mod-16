@@ -25,7 +25,7 @@ class LuhnModNTest extends \PHPUnit\Framework\TestCase
             ['check' => '1', 'string' => '0A0417347000000005D6'],
         ];
         
-        foreach($data as $row) {
+        foreach ($data as $row) {
             $this->assertEquals($row['check'], \LuhnMod16\LuhnMod16::calculate($row['string']));
         }
     }
