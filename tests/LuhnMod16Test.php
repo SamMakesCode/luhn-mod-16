@@ -1,11 +1,11 @@
 <?php
 
-class LuhnModNTest extends \PHPUnit\Framework\TestCase
+class LuhnMod16Test extends \PHPUnit\Framework\TestCase
 {
     /*
      * The nature of this checksum means that 1/16 times it'll be correct anyway.
      * What kind of checksum is that, huh? Please provide more tests if you get the
-     * chance so that we can continue to prove the effectiveness of the this library.
+     * chance so that we can continue to prove the effectiveness of this library.
      */
     public function testCalculatesCorrectly()
     {

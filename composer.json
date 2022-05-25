@@ -3,7 +3,7 @@
   "type": "library",
   "description": "A PHP library for calculating Luhn Mod 16 checksums as used by Royal Mail and others",
   "keywords": ["luhn", "mod", "checksum"],
-  "homepage": "https://github.com/samlittler/luhn-mod-16",
+  "homepage": "https://github.com/sammakescode/luhn-mod-16",
   "license": "proprietary",
   "authors": [
     {
@@ -16,7 +16,10 @@
       "LuhnMod16\\": "src/"
     }
   },
+  "require": {
+    "php": "^8"
+  },
   "require-dev": {
-    "phpunit/phpunit": "^6.3"
+    "phpunit/phpunit": "^9.5"
   }
 }
